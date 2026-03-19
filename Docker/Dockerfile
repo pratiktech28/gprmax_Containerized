@@ -18,9 +18,12 @@ WORKDIR /app
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir numpy cython matplotlib scipy h5py
 
-# Step 5: gprMax Install (Directly from Pip)
-RUN pip install --no-cache-dir gprMax
-
+# Step 5: gprMax Install (Directly from GitHub)
+RUN git clone https://github.com/gprMax/gprMax.git /gprMax
+WORKDIR /gprMax
+RUN pip install --no-cache-dir -r requirements.txt
+RUN python setup.py build
+RUN python setup.py install
 # Step 6: Tera project code container mein copy
 COPY . .
 
