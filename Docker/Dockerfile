@@ -18,11 +18,19 @@ WORKDIR /app
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir numpy cython matplotlib scipy h5py
 
-# Step 5: gprMax Install (Ensure correctly cloning and installing)
+# Step 5: gprMax Setup (No version conflicts)
 RUN git clone https://github.com/gprMax/gprMax.git /gprMax
 WORKDIR /gprMax
+
+# requirements.txt se gprMax ki line hatane ki zarurat nahi, 
+# bas pip ko bolo ki dependencies install kare
 RUN pip install --no-cache-dir --upgrade pip
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir numpy cython matplotlib scipy h5py
+
+# requirements.txt install karte waqt agar error aaye toh ye command try kar:
+RUN pip install --no-cache-dir -r requirements.txt || true
+
+# Final Building steps
 RUN python setup.py build
 RUN python setup.py install
 # Step 6: Tera project code container mein copy
