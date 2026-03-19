@@ -1,5 +1,5 @@
-# Step 1: Base image (Python 3.9)
-FROM python:3.9-slim
+# Step 1: Base image ko update kar (3.9 se 3.11 ya 3.12 kar de)
+FROM python:3.11-slim
 
 # Step 2: OS level dependencies (Compilers aur Tools)
 RUN apt-get update && apt-get install -y \
@@ -18,9 +18,10 @@ WORKDIR /app
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir numpy cython matplotlib scipy h5py
 
-# Step 5: gprMax Install (Directly from GitHub)
+# Step 5: gprMax Install (Ensure correctly cloning and installing)
 RUN git clone https://github.com/gprMax/gprMax.git /gprMax
 WORKDIR /gprMax
+RUN pip install --no-cache-dir --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 RUN python setup.py build
 RUN python setup.py install
