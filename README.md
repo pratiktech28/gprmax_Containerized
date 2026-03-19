@@ -1,64 +1,40 @@
-🚀 gprMax Automated CI/CD & Dockerization
+Isse apni repository ki README.md mein paste kar de:
+
+🚀 Automated gprMax Data Pipeline (Docker + Python + SQL)
 📌 Project Overview
-Is project ka main goal gprMax (Ground Penetrating Radar simulation) ko containerize karna aur ek fully automated CI/CD Pipeline set up karna hai. Isse physics simulations kisi bhi machine par bina installation errors ke chal sakti hain.
+This project establishes a robust automation framework for gprMax physics simulations. By leveraging a containerized architecture, we integrate Python-based simulation logic with an SQL data layer for structured parameter management and result logging—all orchestrated via a professional CI/CD pipeline.
 
-🛠 Tech Stack Used
-Infrastructure: Docker (Containerization)
+🧩 Technical Components Breakdown
+1. The Engine (Python Scripts)
+Simulation Logic: Python scripts interface with the core gprMax API to execute high-frequency electromagnetic simulations.
 
-Automation: GitHub Actions (CI/CD)
+Data Processing: Automated routines to parse raw simulation data into structured formats for analysis.
 
-Language: Python 3.11, HTML/CSS (Interface)
+2. The Data Layer (SQL)
+Parameter Management: All simulation inputs, antenna frequencies, and geometry configurations are stored in SQL tables to ensure reproducibility.
 
-Physics Engine: gprMax
+Result Logging: Every simulation run logs performance metrics and status directly to the database, providing a full audit trail of the research.
 
-🚀 Workflow Architecture
-Code Commit: Developer pushes code (HTML interface + Dockerfile).
+3. The Infrastructure (Docker & CI/CD)
+Containerization: The Docker/Dockerfile ensures a standardized Python 3.11 environment, isolating all C++ and Python dependencies (Cython, H5Py, NumPy) from the host system.
 
-Trigger: GitHub Actions identifies the push event.
+GitHub Actions: A fully automated workflow triggers on every git push, building the Docker image and verifying the code with integration tests (Green Tick ✅ verified).
 
-Environment Setup: A virtual Ubuntu runner is allocated.
-
-Docker Build: The system builds the image using python:3.11-slim.
-
-Installation: gprMax and its dependencies (numpy, cython, h5py) are installed inside the container.
-
-Verification: Automated integration tests are executed.
-
-Push: Final verified environment is ready for deployment.
-
-📂 Project Structure
-Plaintext
-├── .github/workflows/
-│   └── main.yml          # GitHub Actions Configuration (The Engine)
-├── Docker/
-│   └── Dockerfile        # Container Blueprints (Python 3.11 + gprMax)
-├── scripts/
-│   └── integration_test.py # Automated Physics Tests
-├── index.html            # Web Interface for results
-└── README.md             # Project Documentation
-🐳 How to Run Locally
-Agar aapko ye environment apne local machine par chalana hai:
-
-Clone the Repo:
+🛠 Setup & Execution
+Running via Docker
+To execute the entire pipeline locally without manual dependency installation:
 
 Bash
-git clone https://github.com/your-username/gprMax_Containerized.git
-cd gprMax_Containerized
-Build Docker Image:
+# 1. Build the integrated Physics Engine image
+docker build -t gprmax-pipeline -f Docker/Dockerfile .
 
-Bash
-docker build -t gprmax-automation -f Docker/Dockerfile .
-Run Simulation:
+# 2. Run the automated simulation and data logging
+docker run --rm gprmax-pipeline
+📊 CI/CD Implementation Success
+The project successfully overcame several architectural hurdles:
 
-Bash
-docker run --rm gprmax-automation
-📈 CI/CD Implementation Logs
-Humne successfully complex installation hurdles ko solve kiya:
+Python 3.11 Migration: Ensured compatibility with the latest gprMax and SQL driver requirements.
 
-✅ Branch Mismatch Fix: master to main transition.
+Automated Data Persistence: Integrated SQL execution within the containerized lifecycle.
 
-✅ Case Sensitivity: Corrected Docker/Dockerfile path mapping.
-
-✅ Python Compatibility: Upgraded to 3.11-slim for latest gprMax support.
-
-✅ Cloud Verification: Achieved Green Tick on GitHub Actions.
+Runner Optimization: Resolved case-sensitive pathing and branch synchronization for GitHub Hosted Runners.
