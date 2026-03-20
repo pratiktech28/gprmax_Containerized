@@ -1,40 +1,42 @@
-# Step 1: Base image ko update kar (3.9 se 3.11 ya 3.12 kar de)
+# Step 1: Base image (Python slim version for efficiency)
 FROM python:3.11-slim
 
-# Step 2: OS level dependencies (Compilers aur Tools)
+# Step 2: OS level dependencies (Compilers, OpenMP support aur Tools)
 RUN apt-get update && apt-get install -y \
     git \
     build-essential \
     gcc \
     g++ \
+    libgomp1 \
     libfreetype6-dev \
     pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
-# Step 3: Working Directory
+# Step 3: Working Directory set kar
 WORKDIR /app
 
-# Step 4: Python ki core libraries aur gprMax ki zarurat
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir numpy cython matplotlib scipy h5py
+# Step 4: Environment Variables (OpenMP aur Parallel processing ke liye)
+ENV OMP_NUM_THREADS=4
+ENV PYTHONPATH="/gprMax:${PYTHONPATH}"
 
-# Step 5: gprMax Setup (No version conflicts)
+# Step 5: Python ki core libraries aur gprMax ki zarurat
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir numpy cython matplotlib scipy h5py pytest
+
+# Step 6: gprMax Setup (Clone and Build with OpenMP)
 RUN git clone https://github.com/gprMax/gprMax.git /gprMax
 WORKDIR /gprMax
 
-# requirements.txt se gprMax ki line hatane ki zarurat nahi, 
-# bas pip ko bolo ki dependencies install kare
-RUN pip install --no-cache-dir --upgrade pip
-RUN pip install --no-cache-dir numpy cython matplotlib scipy h5py
-
-# requirements.txt install karte waqt agar error aaye toh ye command try kar:
+# Install requirements agar kuch miss ho gaya ho
 RUN pip install --no-cache-dir -r requirements.txt || true
 
-# Final Building steps
+# Final Building steps (Cython code ko compile karke machine level speed dena)
 RUN python setup.py build
 RUN python setup.py install
-# Step 6: Tera project code container mein copy
-COPY . .
 
-# Step 7: Simulation run karne ka default command
+# Step 7: Tera project code container mein copy kar
+COPY . /app
+WORKDIR /app
+
+# Step 8: Simulation run karne ka default command
 CMD ["python", "scripts/integration_test.py"]
