@@ -92,11 +92,3 @@ Accuracy Tracking: Automated NRMSE calculation integrated into the validation sc
 
 Scalability: Designed to handle 100+ concurrent simulation configurations via relational mapping.
 ---
-
-
-<p align="center">
-<b>Developed for Google Summer of Code 2026</b>
-
-
-<i>"Transforming Geophysics with Automation"</i>
-</p>
