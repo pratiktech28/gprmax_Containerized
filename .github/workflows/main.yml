@@ -6,14 +6,13 @@ on:
   pull_request:
     branches: [ "main" ]
 
-# GitHub ko packages likhne ki permission dena zaroori hai
 permissions:
   contents: read
   packages: write
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: pratiktech28/gprmax_containerized 
 
 jobs:
   build-and-push:
@@ -40,19 +39,10 @@ jobs:
 
       - name: Run Simulation with Trident Debugging
         run: |
-          # 1. Results folder banana taaki HDF5 save ho sake
           mkdir -p ${{ github.workspace }}/results
-          
-          # 2. Jo image abhi build hui hai usey pull karo
           docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           
-          # 3. FINAL EXECUTION: Absolute path mapping ke saath simulation run
-          # Yahan 'user_models/test.in' ki jagah apni .in file ka naam confirm kar lena
           docker run --rm \
             -v ${{ github.workspace }}:/app \
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest \
             python3 -m gprMax user_models/test.in -n 1
-          
-          # 4. Verification: Check karo results folder mein output aaya ya nahi
-          echo "Listing results after simulation..."
-          ls -R ${{ github.workspace }}/results
