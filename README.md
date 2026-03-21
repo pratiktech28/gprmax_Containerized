@@ -1,6 +1,8 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9b02d707-3edd-41ec-b01a-feaee7a7f730" />
-![download](https://github.com/user-attachments/assets/b6cf6557-bf8b-427e-8c10-7d17a99db69c)
-![Uploading download.png…]()
+<img width="307" height="164" alt="download" src="https://github.com/user-attachments/assets/627583eb-a7c4-4b99-ade0-3f919f9455b7" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9b02d707-3edd-41ec-b01a-feaee7a7f730" />
+
+<img width="307" height="164" alt="download" src="https://github.com/user-attachments/assets/5daec642-f732-4c2d-828d-5643cf0d672e" />
+<img width="1050" height="300" alt="logo_gprMax" src="https://github.com/user-attachments/assets/b2430b3e-9ccb-4f07-84a2-0a991d01d254" />
+
 
 # 🏛️ gprMax CI/CD & HPC Aut
 omation Infrastructure 🚀
