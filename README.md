@@ -1,7 +1,6 @@
-<img width="307" height="164" alt="download" src="https://github.com/user-attachments/assets/627583eb-a7c4-4b99-ade0-3f919f9455b7"/>
-
+[![gprMax CI/CD Trident Pipeline](https://github.com/pratiktech28/gprmax_Containerized/actions/workflows/main.yml/badge.svg)](https://github.com/pratiktech28/gprmax_Containerized/actions/workflows/main.yml)
+<img width="695" height="300" alt="logo_gprMax" src="https://github.com/user-attachments/assets/b2430b3e-9ccb-4f07-84a2-0a991d01d254" />
 <img width="307" height="164" alt="download" src="https://github.com/user-attachments/assets/5daec642-f732-4c2d-828d-5643cf0d672e" />
-<img width="1050" height="300" alt="logo_gprMax" src="https://github.com/user-attachments/assets/b2430b3e-9ccb-4f07-84a2-0a991d01d254" />
 
 
 # 🏛️ gprMax CI/CD & HPC Aut
