@@ -12,6 +12,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
+  # Don't change this, it must stay lowercase
   IMAGE_NAME: pratiktech28/gprmax_containerized 
 
 jobs:
@@ -41,8 +42,9 @@ jobs:
         run: |
           mkdir -p ${{ github.workspace }}/results
           docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-          
           docker run --rm \
             -v ${{ github.workspace }}:/app \
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest \
-            python3 -m gprMax user_models/test.in -n 1
+            python3 -m gprMax models/user_model.in -n 1
+          echo "Simulation complete. Checking for output files..."
+          ls -R ${{ github.workspace }}/results
