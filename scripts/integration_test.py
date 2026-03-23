@@ -7,11 +7,9 @@ import time
 def log_to_db(model_name, nrmse, exec_time, status):
     """Simulation results ko database mein save karne ka function"""
     try:
-        # Docker container ke andar 'results' folder mein DB banegi
         conn = sqlite3.connect('results/simulation_results.db')
         cursor = conn.cursor()
         
-        # Table create karna agar pehle se na ho (Safety Check)
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS simulation_logs (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -23,7 +21,6 @@ def log_to_db(model_name, nrmse, exec_time, status):
             )
         ''')
         
-        # Data insert karna
         cursor.execute('''
             INSERT INTO simulation_logs (model_name, nrmse_value, execution_time, status)
             VALUES (?, ?, ?, ?)
@@ -36,15 +33,13 @@ def log_to_db(model_name, nrmse, exec_time, status):
         print(f"❌ Database Error: {e}")
 
 def run_simulation(input_file):
-    """gprMax simulation run karne ka function"""
     print(f"🚀 Simulation Start: {input_file}")
     start_time = time.time()
     
-    # gprMax command
+    # gprMax cmd
     command = f"python -m gprMax {input_file} -n 100"
     
     try:
-        # Simulation execute karna
         subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
         end_time = time.time()
         exec_time = round(end_time - start_time, 2)
@@ -57,7 +52,6 @@ def run_simulation(input_file):
 def validate_geometry():
     """Geometry check logic (Dummy NRMSE for now)"""
     print("🔍 Checking Geometry Constraints...")
-    # GSoC project mein tu yahan actual physics math likhega
     return True, 0.0045  # Dummy NRMSE value
 
 if __name__ == "__main__":
