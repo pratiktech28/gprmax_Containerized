@@ -4,8 +4,7 @@
 <img width="250" height="164" alt="download" src="https://github.com/user-attachments/assets/5daec642-f732-4c2d-828d-5643cf0d672e" />
 
 
-# 🏛️ gprMax CI/CD & HPC Aut
-omation Infrastructure 🚀
+# 🏛️ gprMax CI/CD & HPC Automation Infrastructure 🚀
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/gprMax/gprMax/master/docs/images/gprMax_logo.png" width="300" alt="gprMax Logo">
