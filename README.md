@@ -11,7 +11,15 @@
 # 🏛️ gprMax CI/CD & HPC Automation Infrastructure 🚀
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/gprMax/gprMax/master/docs/images/gprMax_logo.png" width="300" alt="gprMax Logo">
+  <strong>
+  Architecting robust, production-ready microservices ecosystems through advanced Docker containerization 
+  and enterprise-grade Kubernetes (K8s) orchestration. Expert in designing high-availability Pod 
+  architectures, managing multi-node cluster lifecycles, and implementing declarative deployments via 
+  Helm charts. Leveraging industry-standard CI/CD pipelines to automate the scaling of gprMax 
+  simulation workloads, ensuring seamless resource allocation, efficient node management, and 
+  maintaining zero-downtime infrastructure for high-performance computational physics environments 
+  at a global scale.
+</strong>
   <br>
   <b>Google Summer of Code (GSoC) 2026 Strategy & Implementation</b>
 </p>
