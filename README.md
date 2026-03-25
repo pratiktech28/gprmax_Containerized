@@ -77,7 +77,7 @@ We track each simulation run with high precision to monitor convergence and phys
 | **Simulation Engine** | gprMax (Latest) | Electromagnetic wave simulation. |
 | **Virtualization** | Docker | Environment consistency and isolation. |
 | **Acceleration** | OpenMP / Cython | Parallel processing and code optimization. |
-| **Data Logging** | SQLite3 | Persistent storage for simulation metadata. |
+| **Data Logging** | Mysql | Persistent storage for simulation metadata. |
 | **Automation** | GitHub Actions | Continuous Integration and automated testing. |
 
 ---
