@@ -97,6 +97,7 @@ The project integrates a Dockerized MySQL backend to maintain a persistent and t
 <br>
 <img width="752" height="211" alt="image" src="https://github.com/user-attachments/assets/1ca61b9c-7551-44e4-bb34-5a09768f786a" />
 <br>
+
 ---
 
 **Physics Validation & High-Performance Scaling**
