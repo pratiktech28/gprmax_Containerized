@@ -83,6 +83,35 @@ The project is designed to handle high-performance GPR simulations that can be r
 
 ---
 
+**Infrastructure & Scalability**
+<br>
+**🚀 Automated Milestone Tracking**
+<br>
+The project integrates a Dockerized MySQL backend to maintain a persistent and transparent record of the development lifecycle. Unlike static documentation, this live database ensures that every stage of the "100 Parallel Pads" implementation is tracked with precision.
+<br>
+**Data Persistence**: Using a dedicated container ensures that roadmap data and simulation results remain intact, even across system reboots.
+<br>
+**Operational Transparency**: By querying the gsoc_roadmap table, mentors can verify real-time progress against the proposed timeline.
+<br>
+**Structured Planning**: Each task is categorized by week and status, providing a clear path from the initial infrastructure setup to final cloud deployment.
+<br>
+<img width="752" height="211" alt="image" src="https://github.com/user-attachments/assets/1ca61b9c-7551-44e4-bb34-5a09768f786a" />
+<br>
+**Physics Validation & High-Performance Scaling**
+<br>
+A core focus of this gprMax project is maintaining physics integrity while scaling computational resources. To achieve this, the system is designed to handle massive parallelization across multiple environments.
+<br>
+**Automated NRMSE Logging**: Every simulation run automatically pushes its NRMSE (Normalized Root Mean Square Error) value to the database. This allows for immediate detection of physics deviations during kernel optimization.
+<br>
+**Self-Healing Clusters**: By leveraging Kubernetes orchestration principles, the infrastructure is built to be fault-tolerant. If a simulation pod crashes under heavy load, the system automatically respawns it to maintain the desired state.
+<br>
+**Elastic Cloud Scaling**: The architecture supports dynamic scaling from 10 to 100 replicas on cloud platforms like GCP or AWS. This ensures that the "100 Parallel Pads" roadmap can be executed smoothly without resource stalling or local hardware limitations.
+<br>
+
+<img width="601" height="196" alt="image" src="https://github.com/user-attachments/assets/fa8a7a94-4b5d-4399-9bcf-e0d5a067a9e3" />
+
+
+
 ## 🛠️ Tech Stack & Requirements
 
 | Category | Technology Used | Purpose |
