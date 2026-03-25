@@ -71,10 +71,12 @@ We track each simulation run with high precision to monitor convergence and phys
 ---
 
 **Resilient Infrastructure & Orchestration**
+
 The project is designed to handle high-performance GPR simulations that can be resource-intensive. To ensure zero downtime and handle potential container failures, we leverage orchestration principles.
 <br>
 **Self-Healing & Auto-Scaling (The K8s Strategy)**
-**Self-Healing**: If a Docker container crashes due to a resource-intensive simulation (OOM or Segfault), the ReplicaSet immediately detects the failure and spins up a healthy pod to maintain the desired state (e.g., 10 active pods).
+**Self-Healing**: If a Docker container crashes due to a resource-intensive simulation (OOM or Segfault), the ReplicaSet immediately detects the failure and spins up a healthy pod to maintain the desired state.
+<br>
 **Dynamic Scaling**: To optimize the "100 Parallel Pads" Roadmap, the system can use a Horizontal Pod Autoscaler (HPA). When the CPU/Memory load increases during massive physics computations, it can automatically scale the cluster from 10 replicas to 100 replicas in real-time.
 <br>
 <img width="1335" height="154" alt="image" src="https://github.com/user-attachments/assets/9e4ebe60-5aad-4570-ba02-eb04b4522b0f" />
