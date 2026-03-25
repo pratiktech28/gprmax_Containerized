@@ -97,6 +97,8 @@ The project integrates a Dockerized MySQL backend to maintain a persistent and t
 <br>
 <img width="752" height="211" alt="image" src="https://github.com/user-attachments/assets/1ca61b9c-7551-44e4-bb34-5a09768f786a" />
 <br>
+---
+
 **Physics Validation & High-Performance Scaling**
 <br>
 A core focus of this gprMax project is maintaining physics integrity while scaling computational resources. To achieve this, the system is designed to handle massive parallelization across multiple environments.
@@ -109,6 +111,8 @@ A core focus of this gprMax project is maintaining physics integrity while scali
 <br>
 
 <img width="601" height="196" alt="image" src="https://github.com/user-attachments/assets/fa8a7a94-4b5d-4399-9bcf-e0d5a067a9e3" />
+
+---
 
 
 
