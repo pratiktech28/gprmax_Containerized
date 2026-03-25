@@ -6,8 +6,9 @@
 
 <img width="600" height="73" alt="download" src="https://github.com/user-attachments/assets/679dc592-7b1a-4084-9f32-53e42108b810" />
 
+<img width="318" height="159" alt="download" src="https://github.com/user-attachments/assets/166fcd52-342f-463b-bd1f-145c62c736b5" />
 
-<img width="250" height="164" alt="download" src="https://github.com/user-attachments/assets/5daec642-f732-4c2d-828d-5643cf0d672e" />
+<img width="250" height="164" alt="download" src="https://github.com/user-attachments/assets/5daec642-f732-4c2d-828d-5643cf0d672e" />                             
 
 
 # 🏛️ gprMax CI/CD & HPC Automation Infrastructure 🚀
