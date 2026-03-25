@@ -59,6 +59,16 @@ The infrastructure is built on a "Layered Security & Performance" model:
 
 ---
 
+**🚀 Database & Automation Setup**
+To ensure data persistence for physics simulations (gprMax), the project uses a Dockerized MySQL instance. This allows for automated logging of NRMSE values and simulation status.
+**Simulation Logs Schema**
+We track each simulation run with high precision to monitor convergence and physics accuracy.
+
+<img width="698" height="199" alt="image" src="https://github.com/user-attachments/assets/d204f5fe-3ef6-4a63-b929-c4056de42129" />
+
+
+---
+
 ## 🛠️ Tech Stack & Requirements
 
 | Category | Technology Used | Purpose |
