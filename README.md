@@ -31,7 +31,7 @@
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/OpenMP-FF6B6B?style=for-the-badge&logo=cpu&logoColor=white" alt="OpenMP">
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="Mysql">
+  <img src="https://img.shields.io/badge/Mysql-003B57?style=for-the-badge&logo=Mysql&logoColor=white" alt="Mysql">
 </p>
 
 ---
