@@ -51,7 +51,7 @@ This project aims to revolutionize the development workflow of gprMax by impleme
 ---
 <div align="center">
   <h1>🏗️ gprmax_Containerized: The Trident Pipeline</h1>
-  <p><strong>Automated CI/CD & Physics-Based Regression Testing for gprMax (GSoC 2026)</strong></p><\div>
+  <p><strong>Automated CI/CD & Physics-Based Regression Testing for gprMax (GSoC 2026)</strong></p>
   <!-- 
 Prateek Sharma GSoC 2026, Trident Pipeline, gprMax Automation, 
 NRMSE Physics Validation, Kubernetes HPC Scaling.
