@@ -56,7 +56,6 @@ This project aims to revolutionize the development workflow of gprMax by impleme
 Prateek Sharma GSoC 2026, Trident Pipeline, gprMax Automation, 
 NRMSE Physics Validation, Kubernetes HPC Scaling.
 -->
-<div>
 <strong>
     gprMax CI/CD, Trident Pipeline Architecture, 
     Physics-Aware Automation, NRMSE Validation Gate, 
