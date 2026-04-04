@@ -201,6 +201,7 @@ Accuracy Tracking: Automated NRMSE calculation integrated into the validation sc
 
 Scalability: Designed to handle 100+ concurrent simulation configurations via relational mapping.
 ---
+<br>
 
 ## 🌍 Global Scaling & Multi-Region Orchestration
 The final phase focuses on a **Global Simulation Network** for the international GPR research community:
