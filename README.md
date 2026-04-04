@@ -51,17 +51,20 @@ This project aims to revolutionize the development workflow of gprMax by impleme
 ---
 <div align="center">
   <h1>🏗️ gprmax_Containerized: The Trident Pipeline</h1>
-  <p><strong>Automated CI/CD & Physics-Based Regression Testing for gprMax (GSoC 2026)</strong></p>
+  <p><strong>Automated CI/CD & Physics-Based Regression Testing for gprMax (GSoC 2026)</strong></p><\div>
   <!-- 
 Prateek Sharma GSoC 2026, Trident Pipeline, gprMax Automation, 
 NRMSE Physics Validation, Kubernetes HPC Scaling.
 -->
-
+  </div>   
+<div>
+<strong>
     Keywords: gprMax CI/CD, Trident Pipeline Architecture, 
     Physics-Aware Automation, NRMSE Validation Gate, 
     Kubernetes Simulation Clusters, Automated A-scan Extraction, 
     Dockerized gprMax v3.1.7, GPR Data Integrity, 
     Prateek Sharma GSoC Proposal, Dr. Craig Warren gprMax.
+</strong>
   </div>
 
   <div>
