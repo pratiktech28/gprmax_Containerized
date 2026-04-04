@@ -62,11 +62,12 @@ This project aims to revolutionize the development workflow of gprMax by impleme
 
   <div>
     <p align="center">
-    <img src="https://shields.io" alt="GSoC 2026">
-    <img src="https://shields.io" alt="Platform">
-    <img src="https://shields.io" alt="Physics Validation">
+    <img src="https://github.com/user-attachments/assets/66b97491-1502-4369-9c5d-7f56b8e51e65" alt="GSoC 2026">
+    <img src="https://github.com/user-attachments/assets/e167672d-72a2-48b6-97e9-339a4e9436f2" alt="gprMax">
+    <img src="https://github.com/user-attachments/assets/735b33f5-d04b-415f-af1f-fd1b267fd8fc" alt="Physics validation">
   </p>
 </div>
+
 
 ---
 
@@ -200,34 +201,15 @@ Accuracy Tracking: Automated NRMSE calculation integrated into the validation sc
 
 Scalability: Designed to handle 100+ concurrent simulation configurations via relational mapping.
 ---
-## 🛠️ Project Scope 
 
-This repository serves as the core implementation for the **Trident Pipeline**, designed to revolutionize **gprMax** by transitioning from manual workflows to a high-integrity, cloud-native automation framework.
+## 🌍 Global Scaling & Multi-Region Orchestration
+The final phase focuses on a **Global Simulation Network** for the international GPR research community:
 
-### 🌟 Key Technical Deliverables
-*   **The Trident Framework:** A modular CI/CD pipeline for automated environment provisioning and simulation health checks.
-*   **NRMSE Physics Gate:** High-precision validation using **Normalized Root Mean Square Error** to handle floating-point variance across CPU/GPU architectures.
-*   **Golden Dataset Strategy:** Ground-truth verification for standard GPR scenarios like dipole antennas and B-scans.
-*   **Scale-Out Architecture:** Transitioning simulations to **Kubernetes (K8s)** parallel pods, targeting a **10x increase** in throughput.
-
-### 📊 Implementation Excellence
-*   **Coordinate Precision:** $\pm 0.001$m spatial localization.
-*   **Data Fidelity:** 1D radar signal (A-scan) extraction with 100% integrity.
-
+1.  **Federated K8s Clusters:** Distributing simulation loads across global regions (AWS/GCP/Azure) to reduce researcher latency.
+2.  **Massive Parallelism:** Scaling to **100+ concurrent worker pods** for rapid AI/ML synthetic data generation.
+3.  **Edge Integration:** Deploying lightweight containers for real-time, on-site structural health monitoring.
+4.  **Distributed RWX Storage:** Aggregating global outputs into a unified "Global Golden Dataset".
 ---
-<div id="global-scaling-vision">
-  <h2>🌍 Section 11: Global Scaling & Multi-Region Orchestration</h2>
-  <p>The final phase of the <strong>Trident Pipeline</strong> focuses on transitioning from localized clusters to a <strong>Global Simulation Network</strong>, ensuring high availability for the international GPR research community.</p>
 
-  <ul>
-    <li><strong>Multi-Region Kubernetes (K8s) Deployment:</strong> Utilizing <code>Federated Clusters</code> to distribute simulation loads across global regions (AWS/GCP/Azure), reducing latency for researchers worldwide.</li>
-    <li><strong>High-Throughput Parallelism:</strong> Scaling from 10 to <strong>100+ concurrent worker pods</strong>, enabling massive synthetic dataset generation for AI/ML training in record time.</li>
-    <li><strong>Edge Computing Integration:</strong> Deploying lightweight <code>gprMax</code> containers to edge devices for real-time, on-site structural health monitoring and digital twin synchronization.</li>
-    <li><strong>Global Data Persistence:</strong> Implementing a distributed <code>ReadWriteMany (RWX)</code> storage layer to aggregate simulation outputs from diverse geographical nodes into a unified "Global Golden Dataset."</li>
-  </ul>
 
-  <blockquote>
-    <strong>Vision:</strong> Making high-fidelity GPR simulations accessible as a globally scalable, cloud-native utility.
-  </blockquote>
-</div>
----
+
