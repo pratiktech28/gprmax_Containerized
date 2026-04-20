@@ -172,6 +172,10 @@ A core focus of this gprMax project is maintaining physics integrity while scali
 
 ---
 
+**_COMMANDS GET STARTED_**
+<img width="682" height="161" alt="image" src="https://github.com/user-attachments/assets/f74b5905-974c-4519-9d96-23ef79d2d185" />
+
+
 ## 🚀 Getting Started (For Mentors & Contributors)
 
 To replicate this environment or test the simulations locally, follow these commands:
