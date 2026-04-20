@@ -163,9 +163,9 @@ A core focus of this gprMax project is maintaining physics integrity while scali
 **🚀 Trident Pipeline in Action**
 <img width="828" height="422" alt="image" src="https://github.com/user-attachments/assets/ecb65f2c-5b5a-49ae-bc6c-d05cfa2bb80a" />
 
-<img width="820" height="453" alt="image" src="https://github.com/user-attachments/assets/4c70b2c6-014d-4ab1-8254-84647ee59072" />
+<img width="820" height="453" alt="image" src="https://github.com/user-attachments/assets/4c70b2c6-014d-4ab1-8254-84647ee59072" />                                 <img width="801" height="52" alt="image" src="https://github.com/user-attachments/assets/d5969537-0a00-4518-a32d-29594a0eeffa" />
 
-<img width="801" height="52" alt="image" src="https://github.com/user-attachments/assets/d5969537-0a00-4518-a32d-29594a0eeffa" />
+
 
 Here is a preview of a gprMax simulation running seamlessly inside the container:
 Note: The system automatically falls back to CPU if no GPU is detected, ensuring 100% reliability.
