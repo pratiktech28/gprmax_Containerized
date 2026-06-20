@@ -4,10 +4,6 @@
 <img width="400" height="200" alt="logo_gprMax" src="https://github.com/user-attachments/assets/b2430b3e-9ccb-4f07-84a2-0a991d01d254" />
 
 
-<img width="600" height="73" alt="download" src="https://github.com/user-attachments/assets/679dc592-7b1a-4084-9f32-53e42108b810" />
-
-<img width="318" height="159" alt="download" src="https://github.com/user-attachments/assets/166fcd52-342f-463b-bd1f-145c62c736b5" />
-
 
 <img width="300" height="168" alt="download" src="https://github.com/user-attachments/assets/7f766db7-394f-4ee0-adcd-815712d9cb59" />
 
