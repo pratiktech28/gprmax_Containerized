@@ -8,14 +8,12 @@
 <img width="300" height="168" alt="download" src="https://github.com/user-attachments/assets/7f766db7-394f-4ee0-adcd-815712d9cb59" />
 
 
-<img width="332" height="152" alt="download" src="https://github.com/user-attachments/assets/c51d1710-fa1e-4622-97e0-b930751e1648" />
-
 # 🏛️ gprMax CI/CD & HPC Automation Infrastructure 🚀
 
 <p align="center">
   <strong>
   Architecting robust, production-ready microservices ecosystems through advanced Docker containerization 
-  and enterprise-grade Kubernetes (K8s) orchestration. Expert in designing high-availability Pod 
+  and enterprise-grade . Expert in designing high-availability Pod 
   architectures, managing multi-node cluster lifecycles, and implementing declarative deployments via 
   Helm charts. Leveraging industry-standard CI/CD pipelines to automate the scaling of gprMax 
   simulation workloads, ensuring seamless resource allocation, efficient node management, and 
