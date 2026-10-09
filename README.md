@@ -148,6 +148,23 @@ A core focus of this gprMax project is maintaining physics integrity while scali
 
 ---
 
+**Terminal Output**
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c2f214d0-20d9-4daf-b13c-c76dea9548b9" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e1b1675f-b1d8-4922-97db-15bc71a86897" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e6415e9d-1e0c-44aa-99e4-6ef689196e2a" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cea9f372-4a82-4ba3-b666-805ecfcd7739" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/81bf480d-0ab2-4a20-94c8-e6c796f95449" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b1b11a6a-00b1-421d-a12b-13b0c6a4b244" />
+
+
+---
+
 **_Execution Preview_**
 
 **🚀 Trident Pipeline in Action**
@@ -221,20 +238,5 @@ The final phase focuses on a **Global Simulation Network** for the international
 3.  **Edge Integration:** Deploying lightweight containers for real-time, on-site structural health monitoring.
 4.  **Distributed RWX Storage:** Aggregating global outputs into a unified "Global Golden Dataset".
 ---
-
-**Terminal Output**
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c2f214d0-20d9-4daf-b13c-c76dea9548b9" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e1b1675f-b1d8-4922-97db-15bc71a86897" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e6415e9d-1e0c-44aa-99e4-6ef689196e2a" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cea9f372-4a82-4ba3-b666-805ecfcd7739" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/81bf480d-0ab2-4a20-94c8-e6c796f95449" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b1b11a6a-00b1-421d-a12b-13b0c6a4b244" />
-
 
 
